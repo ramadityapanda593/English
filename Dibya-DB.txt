@@ -1,0 +1,387 @@
+Dibya-DB
+
+Data-Analysts 
+--------------
+Daily
+Python
+Database
+AI, GEN AI, ML, Agentic AI
+RAG, Vector Database;
+
+Sat, Sun
+English
+1. State of Being.
+2. State of Possession.
+3. State of action.
+Git, GitHub
+Resume, Interview prep.
+---------------------------
+22-08-26
+Database Fundamental
+
+23-08
+ER diagram, and Converting ER diagram to Table
+
+Focus on finding
+1. Entity
+2. Attribute
+3. Relationship between Entities
+4. Cardinalities
+
+by the help of this first make the ER diagram then it will help to create the Tables;
+
+24-08
+Data model, Keys, Into to SQL
+
+What is Data model?
+Type of Data model
+Hierarchy - legacy
+Network -legacy
+Relational - traditional and now used
+ER diagram - used to create relational data model
+OOPs 
+OOPs-Relational;
+
+Key
+1. Super key
+2. Candidate key
+3. Primary key
+4. Alternate key
+5. Foreign key
+
+6. Composite key - multi attribute
+7. Natural Key
+8. Surrogate key
+
+26-08 
+Constraint and SQL;
+
+Database Constraints
+1. Entity IC
+2. Referential IC
+3. Domain IC
+
+4. Key IC; properly utilize of all the keys
+5. User-Defined IC
+E R D K U
+------------------
+SQL Constraints
+
+1. Not Null --> Domain IC
+2. Unique   --> Domain IC
+3. Primary key --> Entity IC
+4. Foreign key --> Referential IC
+5. Check       --> Domain IC
+6. Default     --> Domain IC
+---------------------------------------
+
+ER diagram 
+Degree --> The number of entity types participating in a relationship.
+Cardinality -> The mapping constraints (e.g., 1:1, 1:N, M:N) between entities.;
+
+Table: 
+Degree : The total number of columns (attributes) in the table.
+Cardinality:  M:N) between entities.The total number of rows (records) currently in the table. 
+
+
+26-08
+SQL: is a language
+My-sql: is a s/w to interact with DBMS;
+SQL Commands | DDL, DQL, DML, DCL and TCL Commands
+
+DDL : ACDT(ALTER, CREATE, DROP , TRUNCATE)
+Auto-commit;
+1. Database
+2. Table
+   New table creation
+   Table creation from existing table
+   Table from Cloning
+   Temporary Table.
+3. Column
+4. Auto-increment
+
+28-08
+DML: DUI (INSERT, UPDATE, DELETE) 
+Need to do Manual Commit;
+DQL: Select and Clauses;
+
+DML is mostly used in transactional;
+DDL  Auto Commit
+DML  Need to do commit;
+
+
+DDL, DML, DQL with clause
+DCL - Grant Revoke  - later
+TCL - Transaction - ACID etc,  later
+
+Data Types
+1. Numeric
+2. Character/text
+3. Date and Time
+Date, Time, DataTime, TimeStamp
+4. Boolean: A Boolean data type stores only two logical values: either yes/no, on/off/ true/false etc.
+
+Type Conversion:
+Implicit  SQL Decides
+Explicit  You Decide
+CAST  Standard SQL
+CONVERT  SQL Server
+TRY_CAST  Returns NULL Instead of Error
+
+29-08
+Operator
+1. Arithmetic Operator
+2. Logical Operator
+3. Comparison Operator
+4. Bitwise Operator
+5. Special Operator(IN, BETWEEN, LIKE, IS NULL)
+
+Clause
+1. ORDER BY ASC DESC 
+Single column, Multi Column, 
+0,1 or 2 (Column Number)
+
+2. Group By , single Column, multi column
+Make a doc with at least 10 example;
+3. Having
+4. Limit/Top/First Fetch(DB specific) Offset - for all
+5. Distinct
+6. Aliases
+	1. Column Aliases
+	2. Table Aliases
+-------------------------------------
+
+02-09
+Normalization
+FD
+1. Trivial
+2. Non-Trivial
+3. Completely Non- Trivial
+
+Candidate key
+1. Prime Attribute
+2. Non-Prime Attribute
+
+Fully FD
+Partial FD
+Transitive FD
+
+04-09 
+Attribute Closure. Important, 
+by this we can find the candidate keys.
+How to find Candidate key?
+Armstrong Axioms;
+• Reflexivity
+• Augmentation
+• Transitivity
+• Union
+• Decomposition
+• Pseudo transitivity
+• How to derive new Functional Dependencies
+
+05-09
+Anomalies
+1. Insertion Anomalies
+2. Update Anomalies
+3. Delete Anomalies
+
+Normal Forms
+1NF: Cell should contain Atomic value;
+2NF: No Partial Dependency
+3NF: No Transitive Dependency
+BCNF: 
+
+4NF: Multi valued Dependency
+ex: Hobbies, skill, Language, certification 
+multiple certification done by single student;
+Just create separate table for each.
+
+Decomposition
+1. Lossy Join - will loose data
+2. Lossless Join - will not loose, not gain data
+
+5NF: Join Dependency (JD).
+--> Lossless Join - will not loose, not gain data
+
+A Join Dependency (JD) exists when a relation can be reconstructed by joining three or more tables.
+Notation
+
+
+1NF: cell atomic value
+2NF: no partial FD
+3NF: no transitive
+BCNF: X should be Super key
+
+4NF: Multi valued Dependency
+Hobbies, Language, Skills etc. 
+Cartesian Product
+
+5NF : join Dependency;
+Imagine booking a flight.
+Three independent pieces of information:
+• Passenger
+• Flight
+• Seat
+Instead of storing every possible combination in one table, store them separately and join when needed.
+That's the idea behind 5NF.
+
+
+06-09
+Normalization revise
+Decomposition
+De-normalization
+OLTP, OLAP
+
+Join
+Easy Memory Trick
+INNER JOIN: Only matching rows.
+LEFT JOIN: Everything from the left + matching right.
+RIGHT JOIN: Everything from the right + matching left.
+FULL OUTER JOIN: Everything from both sides.
+CROSS JOIN: Every possible combination.
+SELF JOIN: A table joined to itself.
+
+Doubt:
+theta join
+Equi join 
+semi join
+
+07-09
+TCL, Transaction, ACID, life cycle;
+Rollback, save-point, commit
+ACID
+Different stage of Transaction/Life cycle
+
+Payment 
+
+Tran begin
+
+Step1 - SQL statement - bank account selection
+step2 - deduct money from sender
+step3 - credit money to receiver
+...  -  notification send to receiver.
+
+step n
+Tran end/ Commit
+either success or failure
+no intermediate state
+Transaction def
+
+
+
+till above completed
+Make them module wise and inside module chapter wise
+
+then, Make separate doc of advance topics of above topics
+
+then go through the advance topics cover and set a good examples
+
+then go to Distributed db and all its topics and complete them
+
+then coming to no-sql
+mongo db
+follow the same approach and complete this;
+
+----------------------------------------
+What are these, where it is used.
+Advance SQL
+Sub-Queries and types
+CTEs
+Views
+Indexes
+Sequences
+Windows functions
+stored procedures
+Functions
+Triggers
+Cursors
+Dynamic SQL
+Query optimization
+Execution plans
+-------------------------------------
+
+
+
+--> SQL
+Relation Algebra; 
+Relational Calculus;
+DRC, TRC
+Domain Relation Calculus
+Tuple Relation Calculus
+
+Interview Preparation pdf
+
+
+Query 1{
+	Query 2
+	}
+
+avg : 1 value
+max, min: 1 value
+ 1 row and 1 col - single row sub query
+
+select: multiple value
+
+multiple sub query
+
+co-related
+2nd query depends on 1st Query
+
+Nested : 
+Query 1{
+	Query 2{
+
+		Query 3{
+			Query 4{
+			} 
+		}
+	}
+
+
+27-08
+revision and discussion of adv topics
+I, We You, they, (Plural)  University students --> have
+He, she, it, singular(Ram, shyam, Radha hotel, india, TCS, Berhampur station) --> Has
+
+
+
+08-09
+State of Being
+State of Possession
+
+Saturday --> question answer
+normal, integrative, negation, wh-words
+
+
+Generalization
+Specialization
+Inheritance
+Aggregation
+Enhanced ER / EER model
+
+NULL handling
+
+Also study:
+ON DELETE CASCADE
+ON DELETE SET NULL
+ON DELETE RESTRICT
+ON UPDATE CASCADE
+Constraint naming
+Adding/removing constraints using ALTER TABLE
+
+CASE
+COALESCE
+NULLIF
+String functions
+Numeric functions
+Date functions
+Aggregate functions
+Conditional aggregation
+
+
+7. SQL NULL — Important Missing Topic
+You also noted:
+Theta join
+Equi join
+Semi join
+
